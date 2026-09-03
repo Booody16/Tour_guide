@@ -1,3 +1,6 @@
+header #check , header .fa-bars{
+    display: none;
+}
 header {
     position: fixed;
     top: 0;
