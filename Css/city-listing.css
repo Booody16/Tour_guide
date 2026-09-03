@@ -615,7 +615,26 @@ green{
 .pinterest {  
     background-color: #fa5252;  
 }
-
+@media screen  and (max-width:768px) {
+    header .fa-bars{
+        display: inline;
+        color: black;
+    }
+    nav ul{
+        display: flex;
+        flex-flow: column wrap;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background-color: white;
+        padding-bottom: 2rem;
+        display: none;
+    }
+    #check:checked ~ nav ul{
+        display: flex;
+    }
+}
 
 
 
