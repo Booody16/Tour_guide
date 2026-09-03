@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Listing</title>
+    <link rel="stylesheet" href="/Css/city-listing.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+ <header> 
+ 
+        <p class="logo">Tour Guide</p> 
+ 
+        <nav> 
+            <ul> 
+ 
+                    <li class="dropdown">
+                    <a href="#">Home</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="city-tour.html">City Tour</a></li>
+                        <li><a href="city-listing.html">City Listing</a></li>
+                        <li><a href="profile.html">My Profile</a></li>
+                    </ul>
+                </li>
+                 
+ 
+                <li><a href="#">About Us</a></li> 
+ 
+                <li><a href="#">Popular Destinations</a></li> 
+ 
+                <li><a href="#">Our Packages</a></li> 
+ 
+                <li><a href="#">Help</a></li> 
+ 
+                <li> 
+                    <a href="#" class="signin">Sign in</a> 
+                </li> 
+ 
+            </ul> 
+        </nav> 
+ 
+    </header>
+    
+
+    <main>
+        <section class="activities">
+            <div class="container">
+                <div class="page-title">
+                    <div>
+                        <h1>Things To Do In London</h1>
+                        <p>4 Activities Found</p>
+                    </div>
+                    <label class="sort">Sort By:
+                        <select>
+                            <option>Popularity</option>
+                            <option>Price</option>
+                            <option>Rating</option>
+                        </select>
+                    </label>
+                </div>
+
+            
+           <div class="listing-layout">
+                    <aside class="filters">
+                        <div class="filter-box">
+                            <h3>Availability</h3>
+                            <label>From</label>
+                            <input type="date">
+                            <label>To</label>
+                            <input type="date" >
+                            <button>Check Availability</button>
+                        </div>
+
+                        <div class="filter-box">
+                            <h3>Theme</h3>
+                            <label><input type="checkbox"> Water activities</label>
+                            <label><input type="checkbox"> Good for special events</label>
+                            <label><input type="checkbox"> Adventure</label>
+                            <label><input type="checkbox"> Nature</label>
+                            <label><input type="checkbox"> Hidden gems</label>
+                            <label><input type="checkbox"> Food</label>
+                            <a href="#" ">Show More Categories</a>
+                        </div>
+
+                        <div class="filter-box">
+                            <h3>Duration</h3>
+                            <label><input type="checkbox"> 0–3 Hours</label>
+                            <label><input type="checkbox"> 3–5 Hours</label>
+                            <label><input type="checkbox"> 5–7 Hours</label>
+                            <label><input type="checkbox"> Full-day (7+ Hours)</label>
+                            <label><input type="checkbox"> Multi-day</label>
+                        </div>
+
+                        <div class="filter-box">
+                            <h3>Destination</h3>
+                            <label><input type="checkbox"> Bloomsbury</label>
+                            <label><input type="checkbox"> Covent Garden</label>
+                            <label><input type="checkbox"> Westminster Abbey</label>
+                            <label><input type="checkbox"> Port of London</label>
+                            <label><input type="checkbox"> Royal National Park</label>
+                            <label><input type="checkbox"> Fisher Island</label>
+                            <label><input type="checkbox"> Central London</label>
+                            <a href="#" ">Show More Destinations</a>
+                        </div>
+                    </aside>
+                    
+                   <div class="tour-list">
+                        
+                        <article class="tour-card">
+                            <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=200&h=140&fit=crop" alt="">
+                            <div class="tour-info">
+                                <span class="tag">MOST POPULAR</span>
+                                <h2>Westminster to Greenwich River Thames</h2>
+                                <div class="meta">◷ 2 hours &nbsp; ◉ Transport &nbsp; ♟ Family Pass</div>
+                                <div class="rating"><span>★★★★★</span> <small>4.8 (120)</small></div>
+                            </div>
+                            <strong class="price">$35.00</strong>
+                        </article>
+
+                        <article class="tour-card">
+                            <img src="https://images.unsplash.com/photo-1529655683826-aba9b3e77383?w=200&h=140&fit=crop"
+                                alt="">
+                            <div class="tour-info">
+                                <span class="tag">MOST POPULAR</span>
+                                <h2>Westminster to Greenwich River Thames</h2>
+                                <div class="meta">◷ 2 hours &nbsp; ◉ Transport &nbsp; ♟ Family Pass</div>
+                                <div class="rating"><span>★★★★★</span> <small>4.8 (120)</small></div>
+                            </div>
+                            <strong class="price">$35.00</strong>
+                        </article>
+                        <article class="tour-card">
+                            <img src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?w=200&h=140&fit=crop"
+                                alt="">
+                            <div class="tour-info">
+                                <span class="tag">MOST POPULAR</span>
+                                <h2>Westminster to Greenwich River Thames</h2>
+                                <div class="meta">◷ 2 hours &nbsp; ◉ Transport &nbsp; ♟ Family Pass</div>
+                                <div class="rating"><span>★★★★★</span> <small>4.8 (120)</small></div>
+                            </div>
+                            <strong class="price">$35.00</strong>
+                        </article>
+
+                        <article class="tour-card">
+                            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=200&h=140&fit=crop"
+                                alt="">
+                            <div class="tour-info">
+                                <span class="tag">MOST POPULAR</span>
+                                <h2>Westminster to Greenwich River Thames</h2>
+                                <div class="meta">◷ 2 hours &nbsp; ◉ Transport &nbsp; ♟ Family Pass</div>
+                                <div class="rating"><span>★★★★★</span> <small>4.8 (120)</small></div>
+                            </div>
+                            <strong class="price">$35.00</strong>
+                        </article>
+
+                        <article class="tour-card">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=200&h=140&fit=crop"
+                                alt="">
+                            <div class="tour-info">
+                                <span class="tag">MOST POPULAR</span>
+                                <h2>Westminster to Greenwich River Thames</h2>
+                                <div class="meta">◷ 2 hours &nbsp; ◉ Transport &nbsp; ♟ Family Pass</div>
+                                <div class="rating"><span>★★★★★</span> <small>4.8 (120)</small></div>
+                            </div>
+                            <strong class="price">$35.00</strong>
+                        </article>
+
+                        <article class="tour-card">
+                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=300&h=200&fit=crop"
+                                alt="">
+                            <div class="tour-info">
+                                <span class="tag">MOST POPULAR</span>
+                                <h2>Westminster to Greenwich River Thames</h2>
+                                <div class="meta">◷ 2 hours &nbsp; ◉ Transport &nbsp; ♟ Family Pass</div>
+                                <div class="rating"><span>★★★★★</span> <small>4.8 (120)</small></div>
+                            </div>
+                            <strong class="price">$35.00</strong>
+                        </article>
+
+                        <article class="tour-card">
+                            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=200&h=140&fit=crop"
+                                alt="">
+                            <div class="tour-info">
+                                <span class="tag">MOST POPULAR</span>
+                                <h2>Westminster to Greenwich River Thames</h2>
+                                <div class="meta">◷ 2 hours &nbsp; ◉ Transport &nbsp; ♟ Family Pass</div>
+                                <div class="rating"><span>★★★★★</span> <small>4.8 (120)</small></div>
+                            </div>
+                            <strong class="price">$35.00</strong>
+                        </article>
+
+                        <article class="tour-card">
+                            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=200&h=140&fit=crop"
+                                alt="">
+                            <div class="tour-info">
+                                <span class="tag">MOST POPULAR</span>
+                                <h2>Westminster to Greenwich River Thames</h2>
+                                <div class="meta">◷ 2 hours &nbsp; ◉ Transport &nbsp; ♟ Family Pass</div>
+                                <div class="rating"><span>★★★★★</span> <small>4.8 (120)</small></div>
+                            </div>
+                            <strong class="price">$35.00</strong>
+                        </article>
+
+                        <article class="tour-card">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=200&fit=crop"
+                                alt="">
+                            <div class="tour-info">
+                                <span class="tag">MOST POPULAR</span>
+                                <h2>Westminster to Greenwich River Thames</h2>
+                                <div class="meta">◷ 2 hours &nbsp; ◉ Transport &nbsp; ♟ Family Pass</div>
+                                <div class="rating"><span>★★★★★</span> <small>4.8 (120)</small></div>
+                            </div>
+                            <strong class="price">$35.00</strong>
+                        </article>
+
+                        <button class="load-more">Load More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="specials">
+            <div class="container">
+                <div class="section-heading">
+                    <h2>Outside The City Specials</h2>
+                </div>
+                <div class="special-row">
+                    <div class="row-label green">SPECIAL ACTIVITIES</div>  
+                    <div class="mini-grid">
+                        <div class="mini-card"><img
+                                src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=300&h=200&fit=crop">
+                            <h3>Alaska Westminster to Greenwich River Thames</h3>
+                            <p>◷ Duration 2 hours</p>
+                            <p>◉ Transport Facility</p>
+                            <p>♟ Family Pass</p>
+                            <div>★★★★★ <b>$35.00</b></div>
+                        </div>
+                        <div class="mini-card"><img
+                                src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=300&h=200&fit=crop">
+                            <h3>Alaska Vintage Double Decker Bus Tour & Thames</h3>
+                            <p>◷ Duration 2 hours</p>
+                            <p>◉ Transport Facility</p>
+                            <p>♟ Family Pass</p>
+                            <div>★★★★★ <b>$35.00</b></div>
+                        </div>
+                        <div class="mini-card"><img
+                                src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=300&h=200&fit=crop">
+                            <h3>Alaska Magic of London Tour with Afternoon Tea</h3>
+                            <p>◷ Duration 2 hours</p>
+                            <p>◉ Transport Facility</p>
+                            <p>♟ Family Pass</p>
+                            <div>★★★★★ <b>$35.00</b></div>
+                        </div>
+                        <div class="mini-card"><img
+                                src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=300&h=200&fit=crop">
+                            <h3>Alaska Magic of London Tour with Afternoon Tea</h3>
+                            <p>◷ Duration 2 hours</p>
+                            <p>◉ Transport Facility</p>
+                            <p>♟ Family Pass</p>
+                            <div>★★★★★ <b>$35.00</b></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="special-row">
+                    <div class="row-label blue">SPECIAL TOURS</div>
+                    <div class="mini-grid">
+                        <div class="mini-card"><img
+                                src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=300&h=200&fit=crop">
+                            <h3>Alaska Westminster to Greenwich River Thames</h3>
+                            <p>◷ Duration 2 hours</p>
+                            <p>◉ Transport Facility</p>
+                            <p>♟ Family Pass</p>
+                            <div>★★★★★ <b>$35.00</b></div>
+                        </div>
+                        <div class="mini-card"><img
+                                src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=300&h=200&fit=crop">
+                            <h3>Alaska Vintage Double Decker Bus Tour & Thames</h3>
+                            <p>◷ Duration 2 hours</p>
+                            <p>◉ Transport Facility</p>
+                            <p>♟ Family Pass</p>
+                            <div>★★★★★ <b>$35.00</b></div>
+                        </div>
+                        <div class="mini-card"><img
+                                src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=300&h=200&fit=crop">
+                            <h3>Alaska Magic of London Tour with Afternoon Tea</h3>
+                            <p>◷ Duration 2 hours</p>
+                            <p>◉ Transport Facility</p>
+                            <p>♟ Family Pass</p>
+                            <div>★★★★★ <b>$35.00</b></div>
+                        </div>
+                        <div class="mini-card"><img
+                                src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=300&h=200&fit=crop">
+                            <h3>Alaska Magic of London Tour with Afternoon Tea</h3>
+                            <p>◷ Duration 2 hours</p>
+                            <p>◉ Transport Facility</p>
+                            <p>♟ Family Pass</p>
+                            <div>★★★★★ <b>$35.00</b></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="special-row">
+                    <div class="row-label red">BEST ACTIVITY</div>
+                    <div class="mini-grid">
+                        <div class="mini-card"><img
+                                src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=300&h=200&fit=crop">
+                            <h3>Alaska Westminster to Greenwich River Thames</h3>
+                            <p>◷ Duration 2 hours</p>
+                            <p>◉ Transport Facility</p>
+                            <p>♟ Family Pass</p>
+                            <div>★★★★★ <b>$35.00</b></div>
+                        </div>
+                        <div class="mini-card"><img
+                                src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=300&h=200&fit=crop">
+                            <h3>Alaska Vintage Double Decker Bus Tour & Thames</h3>
+                            <p>◷ Duration 2 hours</p>
+                            <p>◉ Transport Facility</p>
+                            <p>♟ Family Pass</p>
+                            <div>★★★★★ <b>$35.00</b></div>
+                        </div>
+                        <div class="mini-card"><img
+                                src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=300&h=200&fit=crop">
+                            <h3>Alaska Magic of London Tour with Afternoon Tea</h3>
+                            <p>◷ Duration 2 hours</p>
+                            <p>◉ Transport Facility</p>
+                            <p>♟ Family Pass</p>
+                            <div>★★★★★ <b>$35.00</b></div>
+                        </div>
+                        <div class="mini-card"><img
+                                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=300&h=220&fit=crop">
+                            <h3>Alaska Magic of London Tour with Afternoon Tea</h3>
+                            <p>◷ Duration 2 hours</p>
+                            <p>◉ Transport Facility</p>
+                            <p>♟ Family Pass</p>
+                            <div>★★★★★ <b>$35.00</b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section container">
+            <div class="section-title">
+                <div>
+                    <h2>From The Gallery</h2>
+                    <p>Admit minus modi non deserunt dolorem est sit aliquid dolore d...</p>
+                </div>
+                <button>View All Images</button>
+            </div>
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=220&fit=crop">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=300&h=220&fit=crop">
+                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=300&h=220&fit=crop">
+                <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=300&h=220&fit=crop">
+                <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=300&h=220&fit=crop">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=300&h=220&fit=crop">
+                <img src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=300&h=200&fit=crop">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=220&fit=crop">
+            </div>
+        </section>
+        <section class="stories container">
+            <div class="section-title">
+                <div>
+                    <h2>Latest Stories From The City</h2>
+                    <p>Admit minus modi non deserunt dolorem est sit aliquid dolore d...</p>
+                </div>
+                <button>View All Posts</button>
+            </div>
+            <div class="story-grid">
+                <article>
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop">
+                        <small>● Olivia Manson</small>
+                    <h3>7 Signs and Symptoms of Iodine Deficiency</h3>
+                </article>
+                <article>
+                    <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&h=400&fit=crop">
+                        <small>● John Manson</small>
+                    <h3>How to Fix Your Sleep Schedule: 7 Easy Ways</h3>
+                </article>
+                <article>
+                    <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=600&h=400&fit=crop">
+                        <small>● John Manson</small>
+                    <h3>10 Proven Health Benefits of Cinnamon</h3>
+                </article>
+                <article>
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop">
+                        <small>● John Manson</small>
+                    <h3>11 Health Benefits of Turmeric and Curcumin</h3>
+                </article>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer"> 
+    <div class="footer-top"> 
+        <div class="footer-container"> 
+            <div class="footer-col select-col"> 
+                <div class="form-group"> 
+                    <label>Language</label> 
+                    <select> 
+                        <option>English (US)</option> 
+                        <option>Arabic (AR)</option> 
+                    </select> 
+                </div> 
+                <div class="form-group"> 
+                    <label>Currency</label> 
+                    <select> 
+                        <option>U.S. Dollar ($)</option> 
+                        <option>Egyption Pound (LE.)</option> 
+                    </select> 
+                </div> 
+            </div> 
+ 
+            <div class="footer-col"> 
+                 
+                <ul> 
+                    <li><h4>Company</h4></li> 
+                    <li><a href="#">About Us</a></li> 
+                    <li><a href="#">Blog</a></li> 
+                    <li><a href="#">Press Room</a></li> 
+                    <li><a href="#">Careers</a></li> 
+                </ul> 
+            </div> 
+ 
+            <div class="footer-col"> 
+         
+                <ul> 
+                    <li><h4>Help</h4></li> 
+                    <li><a href="#">Contact us</a></li> 
+                    <li><a href="#">FAQs</a></li> 
+                    <li><a href="#">Terms and conditions</a></li> 
+                    <li><a href="#">Privacy policy</a></li> 
+                    <li><a href="#">Sitemap</a></li> 
+                </ul> 
+            </div> 
+ 
+            <div class="footer-col payment-col"> 
+                <h4>Payment methods possible</h4> 
+                <div class="payment-icons"> 
+                    <i class="fa-brands fa-cc-mastercard"></i> 
+                    <i class="fa-brands fa-bitcoin"></i> 
+                    <i class="fa-brands fa-cc-visa"></i> 
+                    <i class="fa-brands fa-cc-amex"></i> 
+                    <i class="fa-brands fa-cc-discover"></i> 
+                    <i class="fa-brands fa-google-pay"></i> 
+                    <i class="fa-brands fa-apple-pay"></i> 
+                    <i class="fa-brands fa-cc-paypal"></i> 
+                </div> 
+                <div class="tour-guide-section"> 
+                    <h4>Company</h4> 
+                    <a href="#" class="guide-link">Become a Tour guide for Us</a> 
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+ 
+    <div class="footer-bottom"> 
+        <div class="footer-container bottom"> 
+            <p class="copyright">Copyright 2026 Tour Guide. All Rights Reserved</p> 
+            <div class="social-icons"> 
+                <a href="#" class="social-btn facebook"><i class="fa-brands fa-facebook-f"></i></a> 
+                <a href="#" class="social-btn twitter"><i class="fa-brands fa-twitter"></i></a> 
+                <a href="#" class="social-btn instagram"><i class="fa-brands fa-instagram"></i></a> 
+                <a href="#" class="social-btn pinterest"><i class="fa-brands fa-pinterest-p"></i></a> 
+            </div> 
+        </div> 
+    </div> 
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/js/city-listing.js"></script>
+
+</body>
+
+</html>

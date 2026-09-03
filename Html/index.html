@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Guide</title>
+    <link rel="stylesheet" href="/Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header>
+
+        <p class="logo">Tour Guide</p>
+
+        <nav>
+            <ul>
+
+                <li class="dropdown">
+                    <a href="#">Home</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="city-tour.html">City Tour</a></li>
+                        <li><a href="city-listing.html">City Listing</a></li>
+                        <li><a href="profile.html">My Profile</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">About Us</a></li>
+
+                <li><a href="#">Popular Destinations</a></li>
+
+                <li><a href="#">Our Packages</a></li>
+
+                <li><a href="#">Help</a></li>
+
+                <li>
+                    <a href="login.html" class="signin">Sign in</a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+<main>
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>We Find The Best Tours For You</h1>
+
+            <p>
+                Find amazing places and unforgettable experiences.
+                Explore the world and discover your next adventure.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="search-section">
+
+        <div class="search-box">
+
+            <div class="search-item">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+
+                <div>
+                    <small>Location</small>
+                    <p>Search For A Destination</p>
+                </div>
+            </div>
+
+
+            <div class="search-item">
+                <i class="fa-solid fa-person-walking-luggage"></i>
+
+                <div>
+                    <small>Guests</small>
+                    <p>How many Guests?</p>
+                </div>
+            </div>
+
+
+            <div class="search-item">
+                <i class="fa-regular fa-calendar-days"></i>
+
+                <div>
+                    <small>Date</small>
+                    <p>Pick a date</p>
+                </div>
+            </div>
+
+
+            <button class="search-btn">
+                Search
+            </button>
+
+        </div>
+
+    </section>
+
+    <section class="popular">
+
+        <h2>Explore Popular Cities</h2>
+
+        <p class="description">
+            Explore the most beautiful destinations and discover
+            amazing places around the world.
+        </p>
+
+
+        <div class="cities">
+
+            <button data-city="New York">New York</button>
+            <button data-city="California">California</button>
+            <button data-city="Alaska" class="active">Alaska</button>
+            <button data-city="Sydney">Sydney</button>
+            <button data-city="Dubai">Dubai</button>
+            <button data-city="London">London</button>
+            <button data-city="Tokyo">Tokyo</button>
+            <button data-city="Paris">Paris</button>
+
+        </div>
+
+
+        <div class="destination">
+
+            <img id="destinationImage"
+                src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"
+                alt="Alaska">
+
+            <div class="destination-info">
+
+                <h2 id="destinationTitle">Alaska</h2>
+
+                <p id="destinationDescription">
+                    Explore amazing landscapes and unforgettable
+                    adventures in one of the most beautiful places
+                    in the world.
+                </p>
+
+                <div class="tags" id="destinationTags">
+
+                    <span>Public Transportation</span>
+                    <span>Nature & Adventure</span>
+                    <span>Private Transportation</span>
+                    <span>Local Tours</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="row g-3">
+
+               <div class="col-12 col-sm-6 col-lg-3 tour-card" data-city="New York">
+
+    <div class="card h-100">
+
+        <img src="https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?auto=format&fit=crop&w=500&q=80"
+             class="card-img-top"
+             alt="New York">
+
+        <div class="card-body d-flex flex-column">
+
+            <h5 class="card-title">
+                New York City Tour
+            </h5>
+
+            <p class="card-text">
+                Explore the famous landmarks and amazing streets of New York.
+            </p>
+
+            <div class="d-flex justify-content-between align-items-center mt-auto">
+
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <span class="fw-bold">$45.00</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="col-12 col-sm-6 col-lg-3 tour-card" data-city="California">
+
+    <div class="card h-100">
+
+        <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=500&q=80"
+             class="card-img-top"
+             alt="California">
+
+        <div class="card-body d-flex flex-column">
+
+            <h5 class="card-title">
+                California Adventure
+            </h5>
+
+            <p class="card-text">
+                Enjoy beautiful beaches and amazing landscapes across California.
+            </p>
+
+            <div class="d-flex justify-content-between align-items-center mt-auto">
+
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <span class="fw-bold">$40.00</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="col-12 col-sm-6 col-lg-3 tour-card" data-city="Alaska">
+
+    <div class="card h-100">
+
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=500&q=80"
+             class="card-img-top"
+             alt="Alaska">
+
+        <div class="card-body d-flex flex-column">
+
+            <h5 class="card-title">
+                Alaska Wilderness Experience
+            </h5>
+
+            <p class="card-text">
+                Explore amazing landscapes and unforgettable adventures in Alaska.
+            </p>
+
+            <div class="d-flex justify-content-between align-items-center mt-auto">
+
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <span class="fw-bold">$35.00</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="col-12 col-sm-6 col-lg-3 tour-card" data-city="Sydney">
+
+    <div class="card h-100">
+
+        <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_60/v1755071422/destination/vzvmnbw5xkbxrwhj7kva.jpg"
+             class="card-img-top"
+             alt="Sydney">
+
+        <div class="card-body d-flex flex-column">
+
+            <h5 class="card-title">
+                Sydney City Tour
+            </h5>
+
+            <p class="card-text">
+                Discover beautiful beaches, famous landmarks and amazing experiences.
+            </p>
+
+            <div class="d-flex justify-content-between align-items-center mt-auto">
+
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <span class="fw-bold">$50.00</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="col-12 col-sm-6 col-lg-3 tour-card" data-city="Dubai">
+
+    <div class="card h-100">
+
+        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=500&q=80"
+             class="card-img-top"
+             alt="Dubai">
+
+        <div class="card-body d-flex flex-column">
+
+            <h5 class="card-title">
+                Dubai City Tour
+            </h5>
+
+            <p class="card-text">
+                Experience Dubai's modern architecture, luxury attractions and adventures.
+            </p>
+
+            <div class="d-flex justify-content-between align-items-center mt-auto">
+
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <span class="fw-bold">$55.00</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="col-12 col-sm-6 col-lg-3 tour-card" data-city="London">
+
+    <div class="card h-100">
+
+        <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=500&q=80"
+             class="card-img-top"
+             alt="London">
+
+        <div class="card-body d-flex flex-column">
+
+            <h5 class="card-title">
+                London Historic Tour
+            </h5>
+
+            <p class="card-text">
+                Discover London's historic landmarks and famous streets.
+            </p>
+
+            <div class="d-flex justify-content-between align-items-center mt-auto">
+
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <span class="fw-bold">$48.00</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="col-12 col-sm-6 col-lg-3 tour-card" data-city="Tokyo">
+
+    <div class="card h-100">
+
+        <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=500&q=80"
+             class="card-img-top"
+             alt="Tokyo">
+
+        <div class="card-body d-flex flex-column">
+
+            <h5 class="card-title">
+                Tokyo Cultural Tour
+            </h5>
+
+            <p class="card-text">
+                Explore Tokyo's modern lifestyle, traditional culture and attractions.
+            </p>
+
+            <div class="d-flex justify-content-between align-items-center mt-auto">
+
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <span class="fw-bold">$60.00</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="col-12 col-sm-6 col-lg-3 tour-card" data-city="Paris">
+
+    <div class="card h-100">
+
+        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=500&q=80"
+             class="card-img-top"
+             alt="Paris">
+
+        <div class="card-body d-flex flex-column">
+
+            <h5 class="card-title">
+                Paris Romantic City Tour
+            </h5>
+
+            <p class="card-text">
+                Discover Paris and its beautiful architecture and famous landmarks.
+            </p>
+
+            <div class="d-flex justify-content-between align-items-center mt-auto">
+
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+
+                <span class="fw-bold">$52.00</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+            </div>
+        </div>
+
+    </section>
+          <!-- -------------------------------------------------------- -->
+               <!-- =========================
+         TRENDING SECTION
+    ========================== -->
+
+    <section class="trending">
+
+        <div class="trending-image">
+            <img src="https://images.unsplash.com/photo-1527004013197-933c4bb611b3?auto=format&fit=crop&w=800&q=80"
+                alt="Alaska Mountains">
+        </div>
+
+        <div class="trend-text">
+
+            <div class="badge-trending">
+                <i class="bi bi-fire"></i>
+                TRENDING NOW
+            </div>
+
+            <h2>Wildlife of Alaska</h2>
+
+            <div class="trend-meta">
+
+                <i class="bi bi-geo-alt-fill"></i>
+                Alaska, USA |
+
+                <span class="stars-text">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </span>
+
+                4.9 (384 reviews)
+
+            </div>
+
+            <p>
+                Experience the breathtaking wilderness of Alaska up close,
+                spot native wildlife, and enjoy pristine glacial views.
+            </p>
+
+            <button class="book-now">
+                Book Now
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FEATURED DESTINATIONS
+    ========================== -->
+
+    <section class="featured">
+
+        <div class="featured-head">
+
+            <h2>Featured Destinations</h2>
+
+            <p>
+                Handpicked tours and excursions designed for the ultimate
+                travel experience.
+            </p>
+
+        </div>
+
+
+        <!-- FOUR CARDS -->
+
+        <div class="featured-grid">
+
+
+            <!-- CARD 1 -->
+
+            <div class="tour-card">
+
+                <img src="https://sa2eh.awicdn.com/site-images/sites/default/files/sa2eh-prod/article/8/f/606554/9585c4d9983da6724a47fc28a0f58e3fd026cc2a-130923100720.jpg?preset=article-main-img&save-png=1&rnd=211320212SA2EH"
+                    alt="Tour 1">
+
+                <div class="tour-body">
+
+                    <h4>
+                        Westminster to Greenwich River Thames
+                    </h4>
+
+                    <div class="meta-line">
+                        <i class="bi bi-clock"></i>
+                        Duration 2 hours
+                    </div>
+
+                    <div class="meta-line">
+                        <i class="bi bi-bus-front"></i>
+                        Transport Facility
+                    </div>
+
+                    <div class="meta-line">
+                        <i class="bi bi-people"></i>
+                        Family Plan
+                    </div>
+
+                    <div class="card-foot">
+
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+
+                        <div class="price">
+                            $35.00
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+
+            <div class="tour-card">
+
+                <img src="https://tse4.mm.bing.net/th/id/OIP.qmVntj9JR1LuOIfGaBG-OAHaFS?r=0&w=1000&h=714&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Tour 2">
+
+                <div class="tour-body">
+
+                    <h4>
+                        Vintage Double Decker Bus Tour
+                    </h4>
+
+                    <div class="meta-line">
+                        <i class="bi bi-clock"></i>
+                        Duration 2 hours
+                    </div>
+
+                    <div class="meta-line">
+                        <i class="bi bi-bus-front"></i>
+                        Transport Facility
+                    </div>
+
+                    <div class="meta-line">
+                        <i class="bi bi-people"></i>
+                        Family Plan
+                    </div>
+
+                    <div class="card-foot">
+
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+
+                        <div class="price">
+                            $35.00
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+
+            <div class="tour-card">
+
+                <img src="https://s-media-cache-ak0.pinimg.com/originals/f3/85/af/f385af614e187de4dcf324f3f5adba17.jpg"
+                    alt="Tour 3">
+
+                <div class="tour-body">
+
+                    <h4>
+                        Magic of London Tour & Tea
+                    </h4>
+
+                    <div class="meta-line">
+                        <i class="bi bi-clock"></i>
+                        Duration 2 hours
+                    </div>
+
+                    <div class="meta-line">
+                        <i class="bi bi-bus-front"></i>
+                        Transport Facility
+                    </div>
+
+                    <div class="meta-line">
+                        <i class="bi bi-people"></i>
+                        Family Plan
+                    </div>
+
+                    <div class="card-foot">
+
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+
+                        <div class="price">
+                            $35.00
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 4 -->
+
+            <div class="tour-card">
+
+                <img src="https://tse3.mm.bing.net/th/id/OIP.g8CluiV1nUfsZt2Cn6p8NQHaFj?r=0&w=1080&h=809&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Tour 4">
+
+                <div class="tour-body">
+
+                    <h4>
+                        Royal Palaces & London Walk
+                    </h4>
+
+                    <div class="meta-line">
+                        <i class="bi bi-clock"></i>
+                        Duration 2 hours
+                    </div>
+
+                    <div class="meta-line">
+                        <i class="bi bi-bus-front"></i>
+                        Transport Facility
+                    </div>
+
+                    <div class="meta-line">
+                        <i class="bi bi-people"></i>
+                        Family Plan
+                    </div>
+
+                    <div class="card-foot">
+
+                        <div class="stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+
+                        <div class="price">
+                            $35.00
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+</main>
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-container">
+                <div class="footer-col select-col">
+                    <div class="form-group">
+                        <label>Language</label>
+                        <select>
+                            <option>English (US)</option>
+                            <option>Arabic (AR)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Currency</label>
+                        <select>
+                            <option>U.S. Dollar ($)</option>
+                            <option>Egyption Pound (LE.)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+
+                    <ul>
+                        <li>
+                            <h4>Company</h4>
+                        </li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press Room</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+
+                    <ul>
+                        <li>
+                            <h4>Help</h4>
+                        </li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms and conditions</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col payment-col">
+                    <h4>Payment methods possible</h4>
+                    <div class="payment-icons">
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <i class="fa-brands fa-bitcoin"></i>
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-amex"></i>
+                        <i class="fa-brands fa-cc-discover"></i>
+                        <i class="fa-brands fa-google-pay"></i>
+                        <i class="fa-brands fa-apple-pay"></i>
+                        <i class="fa-brands fa-cc-paypal"></i>
+                    </div>
+                    <div class="tour-guide-section">
+                        <h4>Company</h4>
+                        <a href="#" class="guide-link">Become a Tour guide for Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-container bottom">
+                <p class="copyright">Copyright 2026 Tour Guide. All Rights Reserved</p>
+                <div class="social-icons">
+                    <a href="#" class="social-btn facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="social-btn instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-btn pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>

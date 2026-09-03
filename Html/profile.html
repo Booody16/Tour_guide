@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Css/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+
+        <p class="logo">Tour Guide</p>
+
+        <nav>
+            <ul>
+
+               <li class="dropdown">
+                    <a href="#">Home</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="city-tour.html">City Tour</a></li>
+                        <li><a href="city-listing.html">City Listing</a></li>
+                        <li><a href="profile.html">My Profile</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">About Us</a></li>
+
+                <li><a href="#">Popular Destinations</a></li>
+
+                <li><a href="#">Our Packages</a></li>
+
+                <li><a href="#">Help</a></li>
+
+                <li>
+                    <a href="#" class="signin">Sign in</a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div id="MyProfile">
+            <h2>My Profile</h2>
+            <p>Home/My Profile</p>
+        </div>
+        <div class="box">
+            <div class="info">
+                <h3>Personal Information</h3>
+            </div>
+            <div>
+                <div class="image">
+                    <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg" alt="">
+                    <i class="fa-solid fa-pencil" id="edit-icon"></i>
+                    <input type="file" id="image-input" accept="image/*" style="display: none;">
+                    <h2>Masum Rana</h2>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="city">Gothenburg</p>
+                    <i class="fa-solid fa-cake-candles"></i>
+                    <p class="date">15th February</p>
+                </div>
+                <div class="btn">
+                    <button class="btn-tab active">Profile Informations</button>
+                    <button class="btn-tab">Booking History</button>
+                    <button class="btn-tab">Newsletter Subscription</button>
+                    <button class="btn-tab">Manage notifications</button>
+                </div>
+            </div>
+            <form class="form" id="profileForm">
+
+                <div class="child"> <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="enter name" required>
+                </div>
+                <div class="child"> <label for="date">Date Of Birth</label>
+                    <input type="date" name="date of birth" id="date" placeholder="enter dob" required>
+                </div>
+                <div class="child"> <label for="tel">Phone</label>
+                    <input type="tel" name="phone" id="tel" placeholder="enter phone" required>
+                </div>
+                <div class="child"><label for="location">Location</label>
+                    <input type="text" name="location" id="location" placeholder="enter location" required>
+                </div>
+                <div class="child"><input type="submit" value="Save"></div>
+                <div class="sec">
+                    <h3>Security</h3>
+                </div>
+                <div class="child">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="enter email" required>
+                </div>
+                <div class="child">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="enter password" required>
+                </div>
+                <div class="child">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" name="password" id="confirm_password" placeholder="Confirm Password"
+                        required>
+                </div>
+                <div class="child"><input type="submit" value="Save"></div>
+
+            </form>
+
+        </div>
+
+    </main>
+    <script src="/js/profile.js"></script>
+</body>
+<footer class="site-footer">
+    <div class="footer-top">
+        <div class="footer-container">
+            <div class="footer-col select-col">
+                <div class="form-group">
+                    <label>Language</label>
+                    <select>
+                        <option>English (US)</option>
+                        <option>Arabic (AR)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Currency</label>
+                    <select>
+                        <option>U.S. Dollar ($)</option>
+                        <option>Egyption Pound (LE.)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="footer-col">
+
+                <ul>
+                    <li>
+                        <h4>Company</h4>
+                    </li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press Room</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+
+                <ul>
+                    <li>
+                        <h4>Help</h4>
+                    </li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col payment-col">
+                <h4>Payment methods possible</h4>
+                <div class="payment-icons">
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-bitcoin"></i>
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-amex"></i>
+                    <i class="fa-brands fa-cc-discover"></i>
+                    <i class="fa-brands fa-google-pay"></i>
+                    <i class="fa-brands fa-apple-pay"></i>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                </div>
+                <div class="tour-guide-section">
+                    <h4>Company</h4>
+                    <a href="#" class="guide-link">Become a Tour guide for Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-container bottom">
+            <p class="copyright">Copyright 2026 Tour Guide. All Rights Reserved</p>
+            <div class="social-icons">
+                <a href="#" class="social-btn facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="social-btn twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="social-btn instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-btn pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>
