@@ -10,7 +10,9 @@
   color: #28323a;
   font-size: 16px;
 } 
-
+header #check , header .fa-bars{
+    display: none;
+}
 
 header {
     position: fixed;
