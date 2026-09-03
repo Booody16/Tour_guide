@@ -103,10 +103,8 @@ cities.forEach(function(button) {
 
     button.addEventListener("click", function() {
 
-        // Get selected city
         let cityName = this.dataset.city;
 
-        // Remove active from all buttons
         cities.forEach(function(btn) {
             btn.classList.remove("active");
         });
@@ -114,19 +112,14 @@ cities.forEach(function(button) {
         // Add active to clicked button
         this.classList.add("active");
 
-        // Get city data
         let city = cityData[cityName];
 
-        // Change image
         destinationImage.src = city.image;
 
-        // Change title
         destinationTitle.textContent = cityName;
 
-        // Change description
         destinationDescription.textContent = city.description;
 
-        // Change tags
         destinationTags.innerHTML = "";
 
         city.tags.forEach(function(tag) {
