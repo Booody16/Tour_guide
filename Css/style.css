@@ -8,7 +8,9 @@ body {
     color: #222;
 }
 /* ================= HEADER ================= */
-
+header #check , header .fa-bars{
+    display: none;
+}
 header {
     position: fixed;
     top: 0;
@@ -1054,4 +1056,24 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+}
+@media screen  and (max-width:768px) {
+    header .fa-bars{
+        display: inline;
+        color: black;
+    }
+    nav ul{
+        display: flex;
+        flex-flow: column wrap;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background-color: white;
+        padding-bottom: 2rem;
+        display: none;
+    }
+    #check:checked ~ nav ul{
+        display: flex;
+    }
 }
